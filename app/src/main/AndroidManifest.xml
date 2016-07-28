@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sztb.socialsecurity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="com.sztb.socialsecurity.activity.login.StartAct" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.sztb.socialsecurity.wxapi.WXEntryActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name="com.sztb.socialsecurity.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.login.SplashActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.MainActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.login.RegisterActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.login.LoginActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.buy.BuySocialSecurityAct"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.order.OrderPayAct"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.address.AddressSelectAct"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.buy.BuyCPFAct"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.query.QuerySocialAct"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.calculate.CalculateAct"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.calculate.CalculateCPFAct"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.how.WhyBuyAct"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.how.HowBuyAct"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.how.HowQueryAct"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.person.PersonActivity"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.person.AssetAct"
+            android:screenOrientation="portrait" ></activity>
+        <activity
+            android:name="com.sztb.socialsecurity.activity.person.AssetSetAct"
+            android:screenOrientation="portrait" ></activity>
+    </application>
+
+</manifest>

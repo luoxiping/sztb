@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottombar_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white" >
+
+    <RadioButton
+        android:id="@+id/bottombar_content1"
+        style="@style/buy_history_tab"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/selector_bottombar_blog"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:button="@null"
+        android:checked="true"
+        android:text="购买社保" />
+
+    <RadioButton
+        android:id="@+id/bottombar_content2"
+        style="@style/buy_history_tab"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/selector_bottombar_mine"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:button="@null"
+        android:text="购买公积金" />
+
+</RadioGroup>

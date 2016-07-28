@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/start_linear_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg" >
+    
+    <include
+        layout="@layout/topbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+	<RelativeLayout
+	    android:id="@+id/rl_head"
+	    android:layout_width="match_parent"
+	    android:layout_height="180dp"
+	    android:background="@color/orange" >
+	    <TextView
+	        android:id="@+id/text_zj"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="总金额(元)"
+	        android:textSize="14sp"
+	        android:textColor="@color/white"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="28dp" />
+	    <TextView
+	        android:id="@+id/text_money"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="14dp"
+	        android:layout_below="@id/text_zj"
+	        android:text="26784.30"
+	        android:textSize="22sp"
+	        android:textColor="@color/white"
+	        android:layout_centerHorizontal="true" />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="24dp"
+	        android:orientation="horizontal"
+	        android:layout_alignParentBottom="true" >
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="30dp"
+	            android:layout_weight="1.0"
+	            android:gravity="center"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="余额"
+	                android:textSize="12sp"
+	                android:textColor="@color/white" />
+	            <View
+	                android:id="@+id/line"
+	                android:layout_width="24dp"
+	                android:layout_height="0.5dp"
+	                android:background="@color/white" />
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="30dp"
+	            android:gravity="center"
+	            android:layout_weight="1.0"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="积分"
+	                android:textSize="12sp"
+	                android:textColor="@color/white" />
+	            <View
+	                android:id="@+id/line2"
+	                android:layout_width="24dp"
+	                android:layout_height="0.5dp"
+	                android:background="@color/white" />
+	        </LinearLayout>
+	    </LinearLayout>
+	</RelativeLayout>
+	
+	<TextView
+	    android:id="@+id/notice"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/rl_head"
+	    android:text="温馨提示："
+	    android:textSize="12sp"
+	    android:textColor="#999"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="24dp" />
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/notice"
+	    android:layout_marginLeft="34dp"
+	    android:text="请保证账户的余额充足，确保有足够的资金可以\n支付社保的购买费用"
+	    android:textSize="10sp"
+	    android:textColor="#999"
+	    android:layout_marginTop="6dp" />
+	<LinearLayout
+	    android:id="@+id/ll_line"
+	    android:layout_width="match_parent"
+	    android:layout_height="44dp"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true" >
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1.0"
+	        android:text="转出"
+	        android:textSize="14sp"
+	        android:textColor="@color/blue"
+	        android:gravity="center" />
+	    <View
+		    android:layout_width="0.5dp"
+		    android:layout_height="match_parent"
+		    android:background="@color/light_gray"
+		    android:layout_above="@id/ll_line" />
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1.0"
+	        android:text="转入"
+	        android:textSize="14sp"
+	        android:textColor="@color/blue"
+	        android:gravity="center" />
+	</LinearLayout>
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="0.5dp"
+	    android:background="@color/light_gray"
+	    android:layout_above="@id/ll_line" />
+	</RelativeLayout>
+</LinearLayout>

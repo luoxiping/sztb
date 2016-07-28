@@ -54,6 +54,7 @@ public abstract class BaseActivity extends Activity implements OnClickListener {
         activityState = ACTIVITY_RESUME;
     }
 
+
     @Override
     protected void onStop() {
         super.onResume();
